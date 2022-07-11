@@ -1,0 +1,12 @@
+.sign-in-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .ant-form {
+    padding: 0 24px;
+    width: 100%;
+    max-width: 420px;
+  }
+}

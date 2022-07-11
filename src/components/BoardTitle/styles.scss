@@ -1,0 +1,43 @@
+.board-topbar {
+  // width: 100vw;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(248, 249, 251);
+  overflow: hidden;
+  .left {
+    flex-grow: 1;
+    // flex-wrap: wrap;
+    .board-title {
+      border: none;
+      box-shadow: none;
+      background: none;
+      padding: 0px 12px;
+      height: 38px;
+      font-weight: 500;
+      font-size: 1.125rem;
+      &:hover {
+        background-color: rgb(234, 235, 236);
+      }
+      > span {
+        max-width: 50vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+      }
+    }
+  }
+  .right {
+    // flex-grow: 1;
+    > button {
+      height: 38px;
+      border: none;
+      box-shadow: none;
+      background: none;
+      &:hover {
+        background-color: rgb(234, 235, 236);
+      }
+    }
+  }
+}

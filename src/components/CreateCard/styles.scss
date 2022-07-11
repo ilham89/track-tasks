@@ -1,0 +1,40 @@
+.create-card {
+  display: flex;
+  border-radius: 12px;
+  font-weight: 500;
+  margin: 4px 0px;
+  .create-card-form-container {
+    padding-bottom: 6px;
+    > textarea {
+      width: 100%;
+      resize: none;
+      outline: none;
+      border-radius: 14px;
+      background-color: #ffffff;
+      border: 1px solid rgb(224, 229, 224);
+      padding: 12px 16px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+  }
+  > a {
+    text-align: center;
+    font-size: 0.875rem;
+    border-radius: 3px;
+    color: #5e6c84;
+    display: block;
+    flex: 1 0 auto;
+    padding: 8px 8px;
+    position: relative;
+    text-decoration: none;
+    -webkit-user-select: none;
+    user-select: none;
+    border-radius: inherit;
+    background-color: rgba(245, 250, 255, 1);
+    border: 1px solid rgba(234, 239, 246, 1);
+    &:hover {
+      outline: none;
+      background-color: rgb(234, 245, 255);
+    }
+  }
+}

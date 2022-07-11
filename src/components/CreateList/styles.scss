@@ -1,0 +1,28 @@
+.create-list-button {
+  min-width: 292px;
+  margin: 0px 4px;
+  padding-right: 12px;
+  display: inline-block;
+  font-weight: 500;
+  background-color: rgba(245, 250, 255, 1);
+  border: 1px solid rgba(234, 239, 246, 1);
+  border-radius: 16px;
+  min-height: 48px;
+  padding: 4px 12px;
+  font-size: 0.875rem;
+}
+
+.create-list-form {
+  > input {
+    min-width: 284px;
+    margin: 0px 4px;
+    display: inline-block;
+    font-weight: 500;
+    background-color: rgba(245, 250, 255, 1);
+    border: 1px solid rgba(234, 239, 246, 1);
+    border-radius: 16px;
+    min-height: 48px;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+  }
+}

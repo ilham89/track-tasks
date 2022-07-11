@@ -1,0 +1,32 @@
+.card-container {
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid rgb(224, 229, 224);
+  &__content {
+    position: relative;
+    font-weight: 500;
+    padding: 12px 16px;
+    .card-icons {
+      top: 7px;
+      right: 8px;
+      position: absolute;
+      > button {
+        color: rgb(103, 107, 103);
+        &:hover {
+          background-color: rgb(224, 229, 224);
+        }
+      }
+    }
+    > form {
+      > input {
+        margin: -1px;
+        font-weight: 500;
+        padding: 0;
+      }
+    }
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

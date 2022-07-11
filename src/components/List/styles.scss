@@ -1,0 +1,80 @@
+.list-container {
+  width: 292px;
+  margin: 0px 4px;
+  padding: 16px 0;
+  // height: calc(100% - 16px);
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  box-sizing: border-box;
+  &__content {
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    position: relative;
+    white-space: normal;
+    // background-color: #ebecf0;
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.125rem;
+      margin-bottom: 12px;
+      padding: 0 16px;
+      white-space: normal;
+      > .list-title {
+        max-width: 200px;
+        overflow: hidden;
+        display: block;
+        // overflow-wrap: break-word;
+        // word-wrap: break-word;
+        text-overflow: ellipsis;
+      }
+      > form {
+        > input {
+          font-size: 1.125rem;
+          padding: 0;
+          // outline: none;
+          // border: none;
+          // padding: 2px 0px;
+          // background-color: rgba(245, 250, 255, 1);
+          border-radius: 8px;
+          // border: 1px solid rgb(224, 229, 224);
+          // border-radius: 12px;
+        }
+      }
+      .list-menu {
+        font-size: 18px;
+        padding-right: 2px;
+        &:hover {
+          background-color: rgba(245, 250, 255, 1);
+        }
+      }
+    }
+    &__cards {
+      padding: 0 16px;
+      flex: 1 1 auto;
+      margin-bottom: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      z-index: 1;
+      min-height: 0;
+    }
+  }
+}
+.ant-dropdown-menu {
+  background-color: #fff;
+  box-shadow: none;
+  color: rgb(60, 64, 82);
+  border: 1px solid rgb(224, 229, 224);
+  border-radius: 12px;
+  > li {
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,66 @@
+.boards-view-container {
+  height: 100%;
+  .boards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 24px 16px;
+    > a {
+      width: 100%;
+      margin-bottom: 24px;
+      .board-card {
+        height: 120px;
+        width: 100%;
+      }
+    }
+    .board-card {
+      width: 296px;
+      height: 208px;
+      padding: 12px 16px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      font-size: 1rem;
+      color: rgb(60, 64, 82);
+      font-weight: 500;
+      overflow: hidden;
+      white-space: normal;
+      > span {
+        display: block;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
+      }
+    }
+    .create-board-card {
+      height: 60px;
+      width: 100%;
+      padding: 12px 16px;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .boards-view-container {
+    .boards-container {
+      width: 0;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-row-gap: 12px;
+      grid-column-gap: 12px;
+      > a {
+        margin: 0;
+        .board-card {
+          height: 188px;
+          width: 280px;
+        }
+      }
+      .create-board-card {
+        height: 188px;
+        width: 280px;
+      }
+    }
+  }
+}
