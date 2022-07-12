@@ -14,13 +14,17 @@ export default function Nav() {
     <Menu>
       <Menu.Item>
         <Link to="/account">
-          <UserOutlined />
-          Account
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <UserOutlined />
+            <div style={{ marginLeft: 8 }}>Account</div>
+          </div>
         </Link>
       </Menu.Item>
       <Menu.Item onClick={auth.doSignOut}>
-        <LogoutOutlined />
-        Sign out
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <LogoutOutlined />
+          <div style={{ marginLeft: 8 }}>Sign out</div>
+        </div>
       </Menu.Item>
     </Menu>
   );
