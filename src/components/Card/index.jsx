@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Draggable } from "react-beautiful-dnd";
 import { Button, Input } from "antd";
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
-import CardModal from "../CardModal";
 import "./styles.scss";
+import CardModal from "../CardModal";
 
 export default function Card({
   index,

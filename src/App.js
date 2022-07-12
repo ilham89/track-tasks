@@ -10,10 +10,9 @@ function App() {
       </UserProvider>
       <div
         style={{
-          position: "absolute",
-          bottom: "16px",
-          right: "16px",
-          zIndex: "1000",
+          marginBottom: "16px",
+          textAlign: "right",
+          marginRight: "16px",
         }}
       >
         Built with <span style={{ marginRight: 4 }}>❤️</span> by

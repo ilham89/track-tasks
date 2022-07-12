@@ -26,6 +26,7 @@
       font-weight: 500;
       overflow: hidden;
       white-space: normal;
+      margin: 8px 0px;
       > span {
         display: block;
         overflow-wrap: break-word;
@@ -37,6 +38,7 @@
       height: 60px;
       width: 100%;
       padding: 12px 16px;
+      margin: 8px 0px 0px;
     }
   }
 }
@@ -58,6 +60,7 @@
         }
       }
       .create-board-card {
+        margin: 16px 0px 0px;
         height: 188px;
         width: 280px;
       }

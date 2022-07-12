@@ -1,11 +1,11 @@
-import { useState, useEffect, lazy } from "react";
+import { useState, useEffect } from "react";
 import { Droppable, Draggable } from "react-beautiful-dnd";
 import { mergeDataWithKey } from "../../utils";
 import { db } from "../../firebase";
+import CreateCard from "../CreateCard";
+import ListHeader from "./ListHeader";
+import Card from "../Card";
 import "./styles.scss";
-const CreateCard = lazy(() => import("../CreateCard"));
-const ListHeader = lazy(() => import("./ListHeader"));
-const Card = lazy(() => import("../Card"));
 
 export default function List({
   cards,
