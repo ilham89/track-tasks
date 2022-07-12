@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, lazy } from "react";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import { getBoardKey, mergeDataWithKey } from "../../utils/index";
 import { useHistory } from "react-router-dom";
 import { db } from "../../firebase";
-import List from "../../components/List";
-import CreateList from "../../components/CreateList";
-import Loader from "../../components/Loader";
-import BoardTitle from "../../components/BoardTitle";
 import "./styles.scss";
+const List = lazy(() => import("../components/List"));
+const CreateList = lazy(() => import("../components/CreateList"));
+const Loader = lazy(() => import("../components/Loader"));
+const BoardTitle = lazy(() => import("../components/BoardTitle"));
 
 export default function Board() {
   const [lists, setLists] = useState([]);

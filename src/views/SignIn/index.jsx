@@ -2,8 +2,8 @@ import { useState } from "react";
 import { auth } from "../../firebase";
 import { useHistory, Link } from "react-router-dom";
 import { Form, Input, Button } from "antd";
-import "./styles.scss";
 import { MailOutlined, LockOutlined } from "@ant-design/icons";
+import "./styles.scss";
 
 export default function SignIn() {
   const history = useHistory();

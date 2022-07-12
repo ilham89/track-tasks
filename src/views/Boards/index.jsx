@@ -1,12 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, lazy } from "react";
 import { mergeDataWithKey } from "../../utils";
 import { db } from "../../firebase";
 import { Link } from "react-router-dom";
 import { Button } from "antd";
-import CreateBoardModal from "../../components/CreateBoardModal";
-import CreateBoardCard from "../../components/CreateBoardCard";
-import Loader from "../../components/Loader";
 import "./styles.scss";
+const Loader = lazy(() => import("../components/Loader"));
+const CreateBoardCard = lazy(() => import("../components/CreateBoardCard"));
+const CreateBoardModal = lazy(() => import("../components/CreateBoardModal"));
 
 function Boards() {
   const [modalOpen, setModalOpen] = useState(false);
