@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button, Input, Modal, Form } from "antd";
+import "./styles.scss";
 
 export default function CreateBoardModal({
   onCloseModal,
@@ -7,11 +8,12 @@ export default function CreateBoardModal({
   visible,
 }) {
   const [boardTitle, setBoardTitle] = useState("");
+  const [selectedColor, setSelectedColor] = useState("#f6b73c");
 
   const handleCreateBoard = (event) => {
     event.preventDefault();
     if (boardTitle !== "") {
-      onCreateBoard({ title: boardTitle });
+      onCreateBoard({ title: boardTitle, color: selectedColor });
       setBoardTitle("");
     }
   };
@@ -38,6 +40,14 @@ export default function CreateBoardModal({
           autoFocus
           autoComplete="off"
         />
+        <div className="color-container">
+          <input
+            type="color"
+            className="input-color"
+            defaultValue={selectedColor}
+            onChange={(e) => setSelectedColor(e.target.value)}
+          />
+        </div>
         <Button
           disabled={boardTitle === ""}
           type="primary"

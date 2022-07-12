@@ -64,7 +64,12 @@ function Boards() {
                       state: { boardKey: board.key },
                     }}
                   >
-                    <Button className="board-card">{board.title}</Button>
+                    <Button
+                      style={{ backgroundColor: board.color }}
+                      className="board-card"
+                    >
+                      {board.title}
+                    </Button>
                   </Link>
                 </div>
               );
